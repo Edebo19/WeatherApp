@@ -6,6 +6,7 @@ import { GoEye } from 'react-icons/go'
 import { LuEyeClosed } from 'react-icons/lu'
 import { login } from '../Global/Slice'
 import { useDispatch, useSelector } from 'react-redux'
+import toast from 'react-hot-toast'
 
 const Login = () => {
 
@@ -70,13 +71,16 @@ const Login = () => {
     } else {
       dispatch(login({email, password}))
       navigate("/weather")
+      
     }
   }
 
   // useEffect(()=>{
   //   if (isLoggedIn === true) {
-      
-  //   } 
+  //     navigate("/weather")
+  //   } else{
+  //     toast.error("Please check your details")
+  //   }
   // }, [isLoggedIn])
   return (
     <div className='AuthWrapper'>
