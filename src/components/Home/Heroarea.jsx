@@ -5,6 +5,7 @@ import { TiWeatherShower } from "react-icons/ti";
 import { TiWeatherStormy } from "react-icons/ti";
 import { SiAccuweather } from "react-icons/si";
 import { TiWeatherSnow } from "react-icons/ti";
+import { useNavigate } from 'react-router-dom'
 
 const Heroarea = () => {
 
@@ -41,11 +42,12 @@ const Heroarea = () => {
         },
         ]
 
+        const navigate = useNavigate()
   return (
     <div className='Heroarea'>
         <div className="write-up">
             <h3>Discover <br/> the weather <br/> from anywhere...  </h3>
-            <button style={{color:"white"}}>Get started</button>
+            <button style={{color:"white", cursor:"pointer"}} onClick={()=>navigate("/sign-up")}>Get started</button>
         </div>
         <div className="transparent-card-holder">
             <div className="transparent-card">
