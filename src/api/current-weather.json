@@ -1,0 +1,24 @@
+{
+  "lat": "6.45407N",
+  "lon": "3.39467E",
+  "elevation": 11,
+  "timezone": "Africa/Lagos",
+  "units": "metric",
+  "current": {
+    "icon": "mostly_sunny",
+    "icon_num": 3,
+    "summary": "Mostly sunny",
+    "temperature": 31.5,
+    "feels_like": 34.5,
+    "wind_chill": 34.5,
+    "dew_point": 21.5,
+    "wind": { "speed": 3.9, "gusts": 6.1, "angle": 197, "dir": "SSW" },
+    "precipitation": { "total": 0.0, "type": "none" },
+    "cloud_cover": 12,
+    "ozone": 263.6,
+    "pressure": 1006,
+    "uv_index": 2.71,
+    "humidity": 55,
+    "visibility": 24.14
+  }
+}

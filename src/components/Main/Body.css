@@ -1,0 +1,16 @@
+.BodyLayout {
+}
+
+#App-light {
+  color: white;
+  background: rgb(49, 49, 49);
+  /* border: 1px solid black; */
+}
+#App-dark {
+  color: rgb(37, 36, 36);
+  background: rgb(255, 255, 255);
+
+  & input::placeholder {
+    color: rgb(20, 20, 20);
+  }
+}

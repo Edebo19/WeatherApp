@@ -1,0 +1,76 @@
+.HeaderBody{
+    height: 15%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-wrapper{
+    height: 80%;
+    width: 90%;
+    background: white;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid white ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo-area{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+    & p{
+        font-family: lucida calligraphy;
+        color: white;
+        font-weight: 550;
+    }
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    /* background: blue; */
+    
+
+    
+
+    & img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.auth-buttons{
+    height: 100%;
+    width: 30%;
+    /* background: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    & button{
+        height: 75%;
+        border-radius: 7px;
+        border: none;
+        font-size: 18px;
+        background: rgb(24, 162, 201);
+        background: rgb(46,122,235);
+        color: white;
+        width: 36%;
+    }
+    & .transparent{
+        background: transparent;
+        border: 1px solid white;
+    }
+    & button:hover{
+        cursor: pointer;
+        background: rgb(25, 133, 235);
+    }
+}

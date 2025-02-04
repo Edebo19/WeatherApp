@@ -1,0 +1,13 @@
+.Userdashboard{
+    height: max-content;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hold-outlet{
+    height: max-content;
+    width: 80%;
+    background: white;
+}

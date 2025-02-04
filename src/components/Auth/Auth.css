@@ -1,0 +1,205 @@
+.AuthWrapper{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,119,193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-auth{
+    height: 90%;
+    width: 32%;
+}
+.auth-header{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p{
+        font-size: 20px;
+        color: white;
+        font-family: lucida calligraphy;
+    }
+
+    & .logo-auth{
+        height: 60px;
+        width: 60px;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.write-up-auth{
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding-left: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.auth-form{
+    height: max-content;
+
+    & button{
+        height: 52px;
+        width: 100%;
+        margin-top: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(27, 156, 226);
+        color: white;
+        font-size: 20px;
+        transition: all 350ms ease-in;
+    }
+    & .login-button{
+        margin-top: 16px;
+    }
+
+    & button:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+        transition: all 350ms ease-in;
+    }
+}
+.mainform{
+    height: 47vh;
+    width: 100%;
+    /* background: skyblue; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainform-login{
+    height: 30vh;
+    width: 100%;
+    /* background: skyblue; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-holder{
+    height: 27%;
+    width: 100%;
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+    & p{
+        color: white;
+    }
+
+    & input{
+        height: 78%;
+        min-height: 78%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+    & .Pass{
+        height: 78%;
+        width: 90%;
+        border-radius: 5px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+    
+}
+
+.passInput{
+    height: 78%;
+    width: 100%;
+    min-height: 78%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: space-between;
+
+    & input{
+        height: 100%;
+        width: 94%;
+        border-radius: 5px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+}
+.input-holder-login{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+    & p{
+        color: white;
+    }
+
+    & input{
+        height: 78%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+}
+.agree{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 6px;
+
+    & p{
+        color: white;
+    }
+
+    & input{
+        accent-color: blue;
+    }
+    & input:hover{
+        cursor: pointer;
+    }
+}
+.auth-footer{
+    height: 10vh;
+    width: 100%;
+    /* background: yellowgreen; */
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    align-items: flex-end;
+    gap: 8px;
+
+    & p{
+        color: white;
+
+        & span:hover{
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+        }
+    }
+    & .forgot:hover{
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,57 @@
+.NoteBody{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column-reverse;
+    }
+}
+.side{
+    height: 100%;
+    width: 14%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+
+    @media screen and (max-width:768px) {
+        height: max-content;
+    }
+
+    & h2{
+        
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    
+    }
+
+    & button{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        background: black;
+        font-size: 30px;
+        color: white;
+        margin-top: 10px;
+        transform: scale(1);
+        transition: all 350ms ease;
+    }
+
+    & button:hover{
+        cursor: pointer;
+        transform: scale(1.04);
+        transition: all 350ms ease;
+    }
+}
+.MainNoteBody{
+    height: 100%;
+    width: 100%;
+    background: white;
+    padding-left: 5px;
+}
