@@ -107,15 +107,16 @@ const Login = () => {
             <>
                 {
                   passwordCheck ?
-                  <div className="passInput">
-                    <input type="password" onChange={handlePassword} />
-                    <GoEye cursor="pointer" onClick={()=> setPasswordCheck(!passwordCheck)} />
-                  </div> 
-              :
+                  
                   <div className="passInput">
                     <input type="text" onChange={handlePassword} />
                     <LuEyeClosed onClick={()=>setPasswordCheck(!passwordCheck)} cursor="pointer" />
                 </div>
+              :
+                <div className="passInput">
+                <input type="password" onChange={handlePassword} />
+                <GoEye cursor="pointer" onClick={()=> setPasswordCheck(!passwordCheck)} />
+              </div> 
                 }
               </>
             </div>
