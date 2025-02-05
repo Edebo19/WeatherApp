@@ -17,6 +17,21 @@
     z-index: 9999;
     display: flex;
     justify-content: flex-end;
+    animation: fadeInRight; 
+    animation-duration: 2s
+}
+.mobileOut{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeOutRight; 
+    animation-duration: 2s
 }
 .wrapper{
     height: 100%;

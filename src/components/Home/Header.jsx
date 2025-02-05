@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
+import 'animate.css';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Header = () => {
             <BiMenu className="menu" ursor="pointer" color="white" size={25} onClick={()=> setShowNav(true)} />
       </div>
       {showNav ? (
-        <div className="mobileNav">
+        <div className="mobileNav" >
           <div className="wrapper">
             <div className="navHeader">
             <div className="left">
