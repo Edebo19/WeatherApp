@@ -28,10 +28,12 @@
     gap: 10px;
 
     @media screen and (max-width:768px) {
-        height: 48%;
-        min-height: 45%;
+        height: 38%;
+        min-height: 38%;
         flex-direction: column;
         padding-right: 20px;
+        width: 60%;
+        min-width: 60%;
     }
 
     @media screen and (max-width: 1200px) and (min-width: 769px) {
@@ -105,7 +107,7 @@
 
     @media screen and (max-width:768px) {
         height: 48%;
-        width: 89%;
+        width: 95%;
         /* flex-direction: column; */
     }
 }
