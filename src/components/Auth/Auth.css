@@ -9,6 +9,10 @@
 .main-auth{
     height: 90%;
     width: 32%;
+
+    @media screen and (max-width: 800px) {
+        width: 95%;
+    }
 }
 .auth-header{
     height: 12%;

@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media screen and (max-width:768px) {
+        height: 50vh;
+        flex-direction: column;
+    }
 }
 .hold-weather-widget{
     height: 83%;
@@ -16,14 +21,14 @@
     gap: 10px;
     /* background: green; */
     font-family: var(font-family);
-    /* -ms-overflow-style: none;  */
-    overflow: hidden;
-     /* scrollbar-width: none */
+    -ms-overflow-style: none; 
+    /* overflow: hidden; */
+     scrollbar-width: none
      
 }
-/* .hold-weather-widget::-webkit-scrollbar{
+.hold-weather-widget::-webkit-scrollbar{
     display: none;
-} */
+}
 .widget-card{
     height: 100%;
     width: 150px;

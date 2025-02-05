@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./MainHeader.css";
 import { BiSearch } from "react-icons/bi";
 import { searchPlaces } from "../../api";
@@ -11,7 +11,14 @@ const Search = ({ dark }) => {
 
   const {setPlace} =  useContext(WeatherContext)
 
+useEffect(()=>{
+  if(text.trim() === ""){
+    setClose(true)
+  }
+},[text])
+
   const onSearch = async (e) => {
+    
     setClose(false)
     setText(e.target.value);
     const data = await searchPlaces(e.target.value);

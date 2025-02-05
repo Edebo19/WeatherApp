@@ -8,7 +8,7 @@ const Place = ({ dark }) => {
   console.log(place);
   return (
     <div className="Place">
-      <GoLocation size={25} />
+      <GoLocation size={22} />
       <p>
         <span style={{ fontWeight: "700" }}>{place.name}</span>, {place.country}
       </p>

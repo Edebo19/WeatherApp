@@ -23,11 +23,11 @@ const Settings = ({dark, setDark}) => {
     <div className='Settings'>
         <>
             {
-                dark ? <FaRegMoon cursor="pointer" onClick={()=>setDark(!dark)} size={33}/> : <LuSun cursor="pointer" onClick={()=>setDark(!dark)} size={33}/>
+                dark ? <FaRegMoon className='set' cursor="pointer" onClick={()=>setDark(!dark)} size={33}/> : <LuSun className='set' cursor="pointer" onClick={()=>setDark(!dark)} size={33}/>
                 
             }
         </>
-        <FaUserCog onClick={()=> setOpen(true)} cursor="pointer" size={33}/>
+        <FaUserCog className='set' onClick={()=> setOpen(true)} cursor="pointer" size={33}/>
 
         {
           open ?

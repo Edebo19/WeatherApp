@@ -12,31 +12,31 @@ const Heroarea = () => {
     const weather = [
         {
             degree: 27,
-            icon: <TiWeatherPartlySunny color='white' size={30}/>,
+            icon: <TiWeatherPartlySunny className="icon" color='white' size={30}/>,
             state: "Lagos",
             country: "Nigeria"
         },
         {
             degree: 33,
-            icon: <TiWeatherPartlySunny color='white' size={30}/>,
+            icon: <TiWeatherPartlySunny className="icon" color='white' size={30}/>,
             state: "Kano",
             country: "Nigeria"
         },
         {
             degree: 15,
-            icon: <TiWeatherShower color='#10d1f3' size={30}/>,
-            state: "Akwa-Ibom",
+            icon: <TiWeatherShower className="icon" color='#10d1f3' size={30}/>,
+            state: "Benue",
             country: "Nigeria"
         },
         {
             degree: 17,
-            icon: <SiAccuweather color='yellow' size={30}/>,
+            icon: <SiAccuweather className="icon" color='yellow' size={30}/>,
             state: "Abia",
             country: "Nigeria"
         },
         {
             degree: 10,
-            icon: <TiWeatherSnow color='#10d1f3' size={30}/>,
+            icon: <TiWeatherSnow className="icon" color='#10d1f3' size={30}/>,
             state: "Imo",
             country: "Nigeria"
         },

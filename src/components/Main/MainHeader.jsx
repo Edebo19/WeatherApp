@@ -8,8 +8,10 @@ const MainHeader = ({dark, setDark}) => {
   return (
     <div className='MainHeader'>
         <div className="headerWrapper">
-            <Place dark={dark}/>
-            <Search dark={dark}/>
+            <div className='place-and-search'>
+              <Place dark={dark}/>
+              <Search dark={dark}/>
+            </div>
             <Settings dark={dark} setDark={setDark} />
         </div>
 

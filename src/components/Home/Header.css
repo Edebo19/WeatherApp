@@ -5,6 +5,75 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
+}
+.mobileNav{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+}
+.wrapper{
+    height: 100%;
+    width: 90%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    background: rgb(227, 239, 240);
+    flex-direction: column;
+    gap: 20px;
+}
+.navHeader{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background: rgb(121, 205, 239);
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+
+
+    .left{
+        width: max-content;
+        height: max-content;
+        display: flex;
+        align-items: center;
+
+        p{
+            font-family: lucida calligraphy;
+            font-size: 14px;
+            transition: all 350ms ease-in-out;
+        }
+        
+    }
+    
+}
+.navButtons{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p{
+        font-size: 20px;
+        padding: 5px;
+        width: 60%;
+        border-radius: 5px;
+        padding-inline: 5px;
+    }
+
+    p:hover{
+        transition: all 350ms ease-in-out;
+        cursor: pointer;
+        /* background: rgb(143, 227, 213); */
+        background: skyblue;
+
+    }
 }
 .header-wrapper{
     height: 80%;
@@ -19,17 +88,28 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+
+    
 }
 .logo-area{
     height: 100%;
     width: 30%;
     display: flex;
     align-items: center;
+    /* background: red; */
 
     & p{
         font-family: lucida calligraphy;
         color: white;
         font-weight: 550;
+
+        @media screen and (max-width:767px) {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        width: max-content;
     }
 }
 .logo{
@@ -37,7 +117,10 @@
     width: 60px;
     /* background: blue; */
     
-
+    @media screen and (max-width:767px) {
+        height: 40px;
+        width: 40px;
+    }
     
 
     & img{
@@ -72,5 +155,16 @@
     & button:hover{
         cursor: pointer;
         background: rgb(25, 133, 235);
+    }
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .menu{
+        display: flex;
+    }
+    .auth-buttons{
+        display: none;
     }
 }
