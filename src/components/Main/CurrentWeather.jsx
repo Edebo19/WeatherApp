@@ -69,6 +69,7 @@ const CurrentWeather = ({data}) => {
   ]
 
   console.log(data);
+  console.log(`dist/weather_icons/set04/big/${icon_num}.png`);
   return <div className="CurrentWeather">
     <div className="temperature">
         <div className="weather-icon">

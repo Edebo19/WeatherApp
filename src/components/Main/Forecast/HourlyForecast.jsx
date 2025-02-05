@@ -40,6 +40,7 @@ const HourlyForecast = ({ data }) => {
       setDay("");
     }
   }, []);
+  console.log(icon)
   return (
     <div
       className="main-widget"
